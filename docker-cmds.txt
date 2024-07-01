@@ -1,0 +1,19 @@
+
+docker login
+
+docker build -t flask_app_fe_be_combined .
+
+docker run -d -p 5000:5000 03dcfd0d5293030e7595
+
+docker exec -it 7e0a0e1c3102b983c4ec  /bin/sh  
+
+docker tag flask_app_fe_be_combined deveshkkr/flask_app_fe_be_combined:latest
+
+docker push deveshkkr/flask_app_fe_be_combined:latest
+
+my image command
+
+docker push deveshkkr/flask_app_fe_be_combined:tagname
+
+
+
